@@ -395,7 +395,7 @@ bot.on("message", message => {
 
 })
 
-const DisTube = require('disTube');
+const DisTube = require('distube');
 const balanceSchema = require('./balanceSchema');
 const distube = new DisTube(bot, {
     searchSongs: false,
