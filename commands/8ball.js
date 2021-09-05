@@ -20,6 +20,7 @@ module.exports = {
             "nah",
             "not at all",
             "nope",
+            "dud, you know it..."
         ]
 
         var answer = answers[Math.floor(Math.random() * (answers.length))]

@@ -22,6 +22,7 @@ module.exports = {
             "programmer",
             "chief",
             "artist",
+            "my moms photographer"
         ]
         var job = jobs[Math.floor(Math.random() * (jobs.length))]
         var pay = Math.floor(Math.random() * 999) + 1
