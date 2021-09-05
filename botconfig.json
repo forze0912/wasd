@@ -1,0 +1,6 @@
+  
+{
+ "token": "ODU2MzQ0ODQxODAxMTcwOTc0.YM_rSA.m5aex2a3Pg5MtUNZ3TTUpi6DBI8",
+ "prefix": "!",
+ "mongoPath": "mongodb+srv://<username>:<password>@discordbot.temsj.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+}
