@@ -34,7 +34,7 @@ module.exports = {
             }
 
             if ([!"dog", "cat", "hamster", "turtle", "rock", "air", "hedgehog"].includes(args[0])) return message.channel.send('That isnt a pet avaiable')
-            if (message.content === '!pet dog') {
+            if (message.content === '#pet dog') {
                 message.channel.send('Your pet is now a dog!')
                 await Pet.findOneAndUpdate({
                     userID: message.author.id,
@@ -43,7 +43,7 @@ module.exports = {
                     Pet: petProfile.Pet = 'dog'
                 });
             }
-            if (message.content === '!pet cat') {
+            if (message.content === '#pet cat') {
                 message.channel.send('Your pet is now a cat!')
                 await Pet.findOneAndUpdate({
                     userID: message.author.id,
@@ -52,7 +52,7 @@ module.exports = {
                     Pet: petProfile.Pet = 'cat'
                 });
             }
-            if (message.content === '!pet hamster') {
+            if (message.content === '#pet hamster') {
                 message.channel.send('Your pet is now a hamster!')
                 await Pet.findOneAndUpdate({
                     userID: message.author.id,
@@ -61,7 +61,7 @@ module.exports = {
                     Pet: petProfile.Pet = 'hamster'
                 });
             }
-            if (message.content === '!pet turtle') {
+            if (message.content === '#pet turtle') {
                 message.channel.send('Your pet is now a turtle!')
                 await Pet.findOneAndUpdate({
                     userID: message.author.id,
@@ -70,7 +70,7 @@ module.exports = {
                     Pet: petProfile.Pet = 'turtle'
                 });
             }
-            if (message.content === '!pet rock') {
+            if (message.content === '#pet rock') {
                 message.channel.send('Your pet is now a rock!')
                 await Pet.findOneAndUpdate({
                     userID: message.author.id,
@@ -88,7 +88,7 @@ module.exports = {
                     Pet: petProfile.Pet = 'air'
                 });
             }
-            if (message.content === '!pet hedgehog') {
+            if (message.content === '#pet hedgehog') {
                 message.channel.send('Your pet is now a hedgehog!')
                 await Pet.findOneAndUpdate({
                     userID: message.author.id,
