@@ -24,7 +24,7 @@ module.exports = {
         ]
 
         var answer = answers[Math.floor(Math.random() * (answers.length))]
-        if (message.content === '!8ball hi') {
+        if (message.content === '#8ball hi') {
             message.channel.send('hai')
         } else {
             var AnswerEmbed = new Discord.MessageEmbed()
