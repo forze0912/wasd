@@ -2,7 +2,7 @@ module.exports = {
     name: 'pet',
     description: "gives u a pet!",
     async execute(message, args) {
-        const Pet = require('../bot/petSchema')
+        const Pet = require('../petSchema')
         var pets = [
             "dog",
             "cat",

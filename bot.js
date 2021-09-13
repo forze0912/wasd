@@ -459,6 +459,7 @@ bot.on("message", async message => {
         mode = mode ? mode == 2 ? "Repeat queue" : "Repeat song" : "Off";
         message.channel.send("Set repeat mode to `" + mode + "`");
     }
+    
     if (command === "queue") {
         let queue = distube.getQueue(message);
         message.channel.send('Current queue:\n' + queue.songs.map((song, id) =>
