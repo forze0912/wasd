@@ -1,3 +1,4 @@
+const mongoose = require('mongoose')
 module.exports = {
     name: 'pet',
     description: "gives u a pet!",
