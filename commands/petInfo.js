@@ -7,7 +7,7 @@ module.exports = {
             guildID: message.guild.id
         });
 
-        if(!petProfile.Pet) return  messsage.channel.send('You need a pet, pls choose one, dog, cat, air,rock, hamster, hedgehog')  
+        if(!petProfile.Pet) return  message.channel.send('You need a pet, pls choose one, dog, cat, air,rock, hamster, hedgehog')  
         
 
         if(!petProfile.PetName) return message.channel.send('You dont have a name for ur pet, pls name them by typing in !name <ur pet name>')
