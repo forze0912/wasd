@@ -353,7 +353,7 @@ bot.on("message", message => {
     const command = args.shift();
 
 
-    const botChoice = Math.floor(Math.random() * 2) + 1
+    const botChoice = Math.floor(Math.random() * 2) + 2
     let botEmoji;
     let playerEmoji
     let botChoiceStr
@@ -372,6 +372,11 @@ bot.on("message", message => {
             botEmoji = ":newspaper: paper";
         }
         if (botChoice == 3) {
+            botChoiceStr = "scissors";
+            botEmoji = ":scissors: scissors";
+        }
+
+        if (botChoice == 4) {
             botChoiceStr = "scissors";
             botEmoji = ":scissors: scissors";
         }
@@ -459,7 +464,7 @@ bot.on("message", async message => {
         mode = mode ? mode == 2 ? "Repeat queue" : "Repeat song" : "Off";
         message.channel.send("Set repeat mode to `" + mode + "`");
     }
-    
+
     if (command === "queue") {
         let queue = distube.getQueue(message);
         message.channel.send('Current queue:\n' + queue.songs.map((song, id) =>
